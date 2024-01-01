@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+header nav li{
+    list-style: none;
+}
+
+header nav .logo a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header nav .navbar{
+    display: flex;
+}
+
+header nav .navbar li a{
+    display: inline-flex;
+    margin-left: 45px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Main Content */
+
+main{
+    width: 100%;
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .about{
+    width: 40%;
+}
+
+main .about-img{
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about-img .img-container{
+    width: 250px;
+    border: 2px black solid;
+    outline: 2px rgb(245, 245, 245) solid;
+    overflow: hidden;
+    display: flex;
+    margin-right: 100px;
+    background-color: #fafafa;
+    justify-content: center;
+    align-items: center;
+    animation: border-change 7s infinite linear alternate;
+}
+
+main .about-img .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+main .about h1{
+    font-size: 45px;
+}
+
+/* Animations */
+
+@keyframes border-change {
+    0%{
+        border-radius: 40% 35% 35% 43% ;
+    }
+
+    50%{
+        border-radius: 39% 37% 33% 45%;
+    }
+    100%{
+        border-radius: 48% 31% 99% 59%;
+    }
+}
